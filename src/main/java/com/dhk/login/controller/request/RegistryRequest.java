@@ -1,7 +1,6 @@
 package com.dhk.login.controller.request;
 
 import com.dhk.login.domain.Role;
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
