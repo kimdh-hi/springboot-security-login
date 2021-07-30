@@ -1,25 +1,26 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
 </head>
 <body>
 <div class="container">
   <div class="my-4">
     <h2>로그인</h2>
   </div>
-  <form>
+  <form th:action method="post" th:object="${member}">
     <div class="mb-3">
       <label for="username" class="form-label">username</label>
-      <input type="text" class="form-control" id="username">
+      <input type="text" class="form-control" id="username" th:field="*{username}">
     </div>
     <div class="mb-3">
       <label for="password" class="form-label">Password</label>
-      <input type="password" class="form-control" id="password">
+      <input type="password" class="form-control" id="password" th:field="*{password}">
     </div>
-    <button type="submit" class="btn btn-primary">회원가입</button>
+    <button type="submit" class="btn btn-primary">로그인</button>
   </form>
 </div>
 </body>
