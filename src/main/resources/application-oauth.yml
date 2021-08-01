@@ -8,7 +8,6 @@ spring:
             client-secret: hyG_C88Hu2wUQVmKu2qL61dD
             scope:
               - profile
-              - email
           kakao:
             authorization-grant-type: authorization_code
             client-id: 66c15d393f9a347e4abc70fd6222ec6b
