@@ -1,4 +1,4 @@
-package com.dhk.login.controller.jwt;
+package com.dhk.login.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;

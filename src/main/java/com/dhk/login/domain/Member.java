@@ -1,10 +1,7 @@
 package com.dhk.login.domain;
 
 
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -26,11 +23,11 @@ public class Member {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+
     @Builder
-    public Member(String username, String password, boolean enabled, Role role) {
+    public Member(String username, String password, Role role) {
         this.username = username;
         this.password = password;
-        this.enabled = enabled;
         this.role = role;
     }
 }

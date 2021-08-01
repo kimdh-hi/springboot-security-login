@@ -1,3 +1,5 @@
+server:
+  port:8080
 
 spring:
   datasource:
@@ -13,3 +15,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        show_sql: true
+
+
+jwt:
+  secret: kimdh22doekgngjkriu31

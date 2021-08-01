@@ -7,11 +7,11 @@ import org.springframework.security.core.userdetails.User;
 
 
 @Getter
-public class SecurityUser extends User {
+public class UserDetails extends User {
 
     private Member member;
 
-    public SecurityUser(Member member) {
+    public UserDetails(Member member) {
         super(member.getUsername(), member.getPassword(), AuthorityUtils.createAuthorityList(member.getRole().toString()));
 
         this.member = member;
